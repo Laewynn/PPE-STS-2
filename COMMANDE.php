@@ -1,83 +1,67 @@
 <?php
-
 class Commande {
-	private $IDCommande;
-	private $DateCommande;
-	private $DateLivraison;
-	private $AdresseLivraison;
-	private $CPLivraison;
-	private $VilleLivraison;
-	private $FraisDePort;
+	private $idcommande;
+	private $datecommande;
+	private $datelivraison;
+	private $adresselivraison;
+	private $cplivraison;
+	private $villelivraison;
+	private $fraisdeport;
  
 	// Constructeur
-
-	function __construct($ID, $Date, $DateLivraison, $AdresseLivraison, $CPLivraison, $VilleLivraison, $FraisDePort) {
-		$this->IDCommande=$ID;
-		$this->DateCommande=$Date;
-		$this->DateLivraison=$DateLivraison;
-		$this->AdresseLivraison=$AdresseLivraison;
-		$this->CPLivraison=$CPLivraison;
-		$this->VilleLivraison=$VilleLivraison;
-		$this->FraisDePort=$FraisDePort;
+	function __construct($idcommande, $datecommande, $datelivraison, $adresselivraison, $cplivraison, $villelivraison, $fraisdeport) {
+		$this->idcommande=$idcommande;
+		$this->datecommande=$Date;
+		$this->datelivraison=$datelivraison;
+		$this->adresselivraison=$adresselivraison;
+		$this->cplivraison=$cplivraison;
+		$this->villelivraison=$villelivraison;
+		$this->fraisdeport=$fraisdeport;
 	}
     
     // Get ID du Client
 		function getIDClient(){
-  		return $this->$IDClient;
+  		return $this->$idcommande;
   	}
     
     // Set ID du Client
   	function setIDClient($id){
-  		$this->IDClient=$id;
+  		$this->idcommande=$id;
   	}
-
   	function getDateCommande(){
-  		return $this->$DateCommande;
+  		return $this->$datecommande;
   	}
-
   	function setDateCommande($DateC){
-  		 $this->DateCommande=$DateC;
+  		 $this->datecommande=$DateC;
   	}
-
   	function getDateLivraison(){
-  		return $this->$DateLivraison;
+  		return $this->$datelivraison;
   	}
-
   	function setDateLivraison($DateL){
-  		 $this->$DateCommande=$DateL;
+  		 $this->$datelivraison=$DateL;
   	}
-
   	function getAdresseLivraison(){
-  		return $this->$AdresseLivraison;
+  		return $this->$adresselivraison;
   	}
-
   	function setAdresseLivraison($AdresseL){
-  		$this->$AdresseLivraison=$AdresseL;
+  		$this->$adresselivraison=$AdresseL;
   	}
-
   	function getCPLivraison(){
-  		return $this->$CPLivraison;
+  		return $this->$cplivraison;
   	}
-
     function setCPLivraison($CPL){
-      $this->CPLivraison=$CPL;
+      $this->cplivraison=$CPL;
     }
-
     function getVilleLivraison(){
-      return $this->VilleLivraison;
+      return $this->villelivraison;
     }
-
     function setVilleLivraison($VilleL){
-      $this->VilleLivraison=$VilleL;
+      $this->villelivraison=$VilleL;
     }
-
     function getFraisDePort(){
-      return $this->FraisDePort;
+      return $this->fraisdeport;
     }
-
     function setFraisDePort($FraisDP){
-
-      $this->FraisDePort=$FraisDP;
+      $this->fraisdeport=$FraisDP;
     }
-
 }
