@@ -1,95 +1,73 @@
 <?php
-
 class Client {
-	private $IDClient;
-	private $NomClient;
-	private $PrenomClient;
-	private $AdresseClient;
-	private $CPClient;
-	private $VilleClient;
-	private $TelephoneClient;
-	private $MailClient;
-
+	private $idclient;
+	private $nomclient;
+	private $prenomclient;
+	private $adresseclient;
+	private $cpclient;
+	private $villeclient;
+	private $telephoneclient;
+	private $mailclient;
 	// Constructeur 
-
-	function __construct($ID, $Nom, $Prenom, $Adresse, $CP, $Ville, $Telephone, $Mail) {
-		$this->IDClient=$ID;
-		$this->NomClient=$Nom;
-		$this->PrenomClient=$Prenom;
-		$this->AdresseClient=$Adresse;
-		$this->CPClient=$CP;
-		$this->VilleClient=$Ville;
-		$this->TelephoneClient=$Telephone;
-		$this->MailClient=$Mail;
+	function __construct($idclient, $nomclient, $prenomclient, $adresseclient, $cpclient, $villeclient, $telephoneclient, $mailclient) {
+		$this->idclient=$idclient;
+		$this->nomclient=$nomclient;
+		$this->prenomclient=$prenomclient;
+		$this->adresseclient=$adresseclient;
+		$this->cpclient=$cpclient;
+		$this->villeclient=$villeclient;
+		$this->telephoneclient=$telephoneclient;
+		$this->MailClient=$mailclient;
 	}
-
 	//Accesseurs (Get) recuperer les données
-
-  	function getID(){
-  		return $this->$IDClient;
+  	function getidclient(){
+  		return $this->$idclient;
   	}
-
-  	function getNom(){
-  		return $this->$NomClient;
+  	function getnomclient(){
+  		return $this->$nomclient;
   	}
-
-  	function getPrenom(){
-  		return $this->$PrenomClient;
+  	function getprenomclient(){
+  		return $this->$prenomclient;
   	}
-
-  	function getAdresse(){
-  		return $this->$AdresseClient;
+  	function getadresseclient(){
+  		return $this->$adresseclient;
   	}
-
-  	function getCP(){
-  		return $this->$CPClient;
+  	function getcpclient(){
+  		return $this->$cpclient;
   	}
-
-  	function getVille(){
-  		return $this->$VilleClient;
+  	function getvilleclient(){
+  		return $this->$villeclient;
   	}
-
-  	function getTelephone(){
-  		return $this->$TelephoneClient;
+  	function gettelephoneclient(){
+  		return $this->$telephoneclient;
   	}
-
-  	function getMail(){
-  		return $this->$MailClient;
+  	function getmailclient(){
+  		return $this->$mailclient;
   	}
-
   	// Muttateurs Set modifier les données
-
-  	function setID($var){
-  		return $this->IDClient=$var;
+  	function setidclient($var){
+  		return $this->idclient=$var;
   	}
-
-  	function setNom($var){
-  		return $this->NomClient=$var;
+  	function setnomclient($var){
+  		return $this->nomclient=$var;
   	}
-
-  	function setPrenom($var){
-  		return $this->PrenomClient=$var;
+  	function setprenomclient($var){
+  		return $this->prenomclient=$var;
   	}
-
-  	function setAdresse($var){
-  		return $this->AdresseClient=$var;
+  	function setadresseclient($var){
+  		return $this->adresseclient=$var;
   	}
-
-  	function setCP($var) {
-  		return $this->$CPClient=$var;
+  	function setcpclient($var) {
+  		return $this->$cpclient=$var;
   	}
-
-  	function setVille($var){
-  		return $this->$VilleClient=$var;
+  	function setvilleclient($var){
+  		return $this->$villeclient=$var;
   	}
-
-  	function setTelephone($var){
-  		return $this->$TelephoneClient=$var;
+  	function settelephoneclient($var){
+  		return $this->$telephoneclient=$var;
   	}
-
-  	function setMail($var){
-  		return $this->$MailClient=$var;
+  	function setmailclient($var){
+  		return $this->$mailclient=$var;
   	}
 }
-
 ?> 
