@@ -8,7 +8,8 @@ class Client {
 	private $villeclient;
 	private $telephoneclient;
 	private $mailclient;
-	// Constructeur 
+	
+	// Constructeur de la classe Client
 	function __construct($idclient, $nomclient, $prenomclient, $adresseclient, $cpclient, $villeclient, $telephoneclient, $mailclient) {
 		$this->idclient=$idclient;
 		$this->nomclient=$nomclient;
@@ -19,50 +20,69 @@ class Client {
 		$this->telephoneclient=$telephoneclient;
 		$this->MailClient=$mailclient;
 	}
-	//Accesseurs (Get) recuperer les données
+	// Accesseurs et Mutateurs TVA
   	function getIDClient(){
   		return $this->$idclient;
   	}
+	
+	function setIDClient($var){
+  		return $this->idclient=$var;
+  	}
+	
+	// Accesseurs et Mutateurs TVA
   	function getNomClient(){
   		return $this->$nomclient;
   	}
+	
+	function setNomClient($var){
+  		return $this->nomclient=$var;
+  	}
+	
+	// Accesseurs et Mutateurs TVA
   	function getPrenomClient(){
   		return $this->$prenomclient;
   	}
   	function getAdresseClient(){
   		return $this->$adresseclient;
   	}
+	
+	
   	function getCPClient(){
   		return $this->$cpclient;
   	}
   	function getVilleClient(){
   		return $this->$villeclient;
   	}
+	
+	// Accesseurs et Mutateurs TVA
   	function getTelephoneClient(){
   		return $this->$telephoneclient;
   	}
   	function getMailClient(){
   		return $this->$mailclient;
   	}
-  	// Muttateurs Set modifier les données
-  	function setIDClient($var){
-  		return $this->idclient=$var;
-  	}
-  	function setNomClient($var){
-  		return $this->nomclient=$var;
-  	}
+	
+  	// Accesseurs et Mutateurs TVA
+  	
+  	
+	
+	// Accesseurs et Mutateurs TVA
   	function setPrenomClient($var){
   		return $this->prenomclient=$var;
   	}
   	function setAdresseClient($var){
   		return $this->adresseclient=$var;
   	}
+	
+	// Accesseurs et Mutateurs TVA
   	function setCPClient($var) {
   		return $this->$cpclient=$var;
   	}
   	function setVilleClient($var){
   		return $this->$villeclient=$var;
   	}
+	
+	// Accesseurs et Mutateurs TVA
   	function setTelephoneClient($var){
   		return $this->$telephoneclient=$var;
   	}
