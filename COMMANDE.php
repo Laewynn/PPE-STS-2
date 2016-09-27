@@ -8,7 +8,7 @@ class Commande {
 	private $villelivraison;
 	private $fraisdeport;
  
-	// Constructeur
+	// Constructeur de la classe Commmande
 	function __construct($idcommande, $datecommande, $datelivraison, $adresselivraison, $cplivraison, $villelivraison, $fraisdeport) {
 		$this->idcommande=$idcommande;
 		$this->datecommande=$Date;
@@ -19,49 +19,63 @@ class Commande {
 		$this->fraisdeport=$fraisdeport;
 	}
     
-    // Get ID du Client
+    // Accesseurs et Mutateurs de l'ID du CLient
 		function getIDClient(){
   		return $this->$idcommande;
   	}
-    
-    // Set ID du Client
+	
   	function setIDClient($id){
   		$this->idcommande=$id;
   	}
+	
+	// Accesseurs et Mutateurs de la date de la commande
   	function getDateCommande(){
   		return $this->$datecommande;
   	}
   	function setDateCommande($DateC){
   		 $this->datecommande=$DateC;
   	}
+	
+	// Accesseurs et Mutateurs de la date de livraison
   	function getDateLivraison(){
   		return $this->$datelivraison;
   	}
   	function setDateLivraison($DateL){
   		 $this->$datelivraison=$DateL;
   	}
+	
+	// Accesseurs et Mutateurs de l'adresse de livraison
   	function getAdresseLivraison(){
   		return $this->$adresselivraison;
   	}
   	function setAdresseLivraison($AdresseL){
   		$this->$adresselivraison=$AdresseL;
   	}
+	
+	// Accesseurs et Mutateurs du code postal de la livraison
   	function getCPLivraison(){
   		return $this->$cplivraison;
   	}
-    function setCPLivraison($CPL){
-      $this->cplivraison=$CPL;
-    }
-    function getVilleLivraison(){
-      return $this->villelivraison;
-    }
-    function setVilleLivraison($VilleL){
-      $this->villelivraison=$VilleL;
-    }
-    function getFraisDePort(){
-      return $this->fraisdeport;
-    }
-    function setFraisDePort($FraisDP){
-      $this->fraisdeport=$FraisDP;
-    }
+	
+    	function setCPLivraison($CPL){
+      		$this->cplivraison=$CPL;
+    	}
+	
+	// Accesseurs et Mutateurs de la ville de la livraisonj
+	function getVilleLivraison(){
+	        return $this->villelivraison;
+	}
+	
+	function setVilleLivraison($VilleL){
+	        $this->villelivraison=$VilleL;
+	}
+	
+	// Accesseurs et Mutateurs des frais de port 
+	function getFraisDePort(){
+	        return $this->fraisdeport;
+	}
+	
+	function setFraisDePort($FraisDP){
+	        $this->fraisdeport=$FraisDP;
+	 }
 }
