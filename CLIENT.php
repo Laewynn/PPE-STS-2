@@ -20,7 +20,7 @@ class Client {
 		$this->telephoneclient=$telephoneclient;
 		$this->MailClient=$mailclient;
 	}
-	// Accesseurs et Mutateurs TVA
+	// Accesseurs et Mutateurs de ID Client
   	function getIDClient(){
   		return $this->$idclient;
   	}
@@ -29,7 +29,7 @@ class Client {
   		return $this->idclient=$var;
   	}
 	
-	// Accesseurs et Mutateurs TVA
+	// Accesseurs et Mutateurs du Nom Client
   	function getNomClient(){
   		return $this->$nomclient;
   	}
@@ -38,56 +38,60 @@ class Client {
   		return $this->nomclient=$var;
   	}
 	
-	// Accesseurs et Mutateurs TVA
+	// Accesseurs et Mutateurs du Prenom Client
   	function getPrenomClient(){
   		return $this->$prenomclient;
   	}
+	
+	function setPrenomClient($var){
+  		return $this->prenomclient=$var;
+  	}
+	
+	// Accesseurs et Mutateurs de l'Adresse du Client
   	function getAdresseClient(){
   		return $this->$adresseclient;
   	}
 	
+	function setAdresseClient($var){
+  		return $this->adresseclient=$var;
+  	}
 	
+	// Accesseurs et Mutateurs du Code Postal du Client
   	function getCPClient(){
   		return $this->$cpclient;
   	}
+	
+	function setCPClient($var) {
+  		return $this->$cpclient=$var;
+  	}
+	
+	// Accesseurs et Mutateurs de la Ville du Client
   	function getVilleClient(){
   		return $this->$villeclient;
   	}
 	
-	// Accesseurs et Mutateurs TVA
+	function setVilleClient($var){
+  		return $this->$villeclient=$var;
+  	}
+	
+	
+	// Accesseurs et Mutateurs du Telephone du Client
   	function getTelephoneClient(){
   		return $this->$telephoneclient;
   	}
+	
+	function setTelephoneClient($var){
+  		return $this->$telephoneclient=$var;
+  	}
+	
+	// Accesseurs et Mutateurs du mail du Client
   	function getMailClient(){
   		return $this->$mailclient;
   	}
 	
-  	// Accesseurs et Mutateurs TVA
-  	
-  	
-	
-	// Accesseurs et Mutateurs TVA
-  	function setPrenomClient($var){
-  		return $this->prenomclient=$var;
-  	}
-  	function setAdresseClient($var){
-  		return $this->adresseclient=$var;
-  	}
-	
-	// Accesseurs et Mutateurs TVA
-  	function setCPClient($var) {
-  		return $this->$cpclient=$var;
-  	}
-  	function setVilleClient($var){
-  		return $this->$villeclient=$var;
-  	}
-	
-	// Accesseurs et Mutateurs TVA
-  	function setTelephoneClient($var){
-  		return $this->$telephoneclient=$var;
-  	}
-  	function setMailClient($var){
+	function setMailClient($var){
   		return $this->$mailclient=$var;
-  	}
+  	}	
+  	
 }
 ?> 
