@@ -1,4 +1,20 @@
 <?php
+/**
+* Le fichier PHP fait partie du projet Application Commericiale 
+* Il sert à définir la classe Client avec son constructeur
+* ses accesseurs et ses mutateurs.
+* La classe client est la classe mère 
+* @datedernièremodification : 27 septembre 2016
+* @since 20 septembre 2016
+* @author Laëtitia Marchand <laetitiamarchand35@gmail.com>
+*/
+
+
+/**
+ * La classe Client permet de gérer la table client du projet Application Commericiale.
+ *
+ * @author Laëtitia Marchand <laetitiamarchand35@gmail.com>
+ */
 class Client {
 	private $idclient;
 	private $nomclient;
@@ -9,6 +25,17 @@ class Client {
 	private $telephoneclient;
 	private $mailclient;
 	
+	/*
+	* Fonction qui sert à déclarer le constructeur de la classe Client
+	* @param $idclient =  l'identifiant du client
+	* @param $nomclient = le nom du client  
+	* @param $prenomclient = le prénom du client
+	* @param $adresseclient = l'adresse du client
+	* @param $cpclient = le code postal du client
+	* @param $villeclient = la ville du client
+	* @param $telephoneclient = le téléphone du client
+	* @param $mailcient = l'email du client
+	*/
 	// Constructeur de la classe Client
 	function __construct($idclient, $nomclient, $prenomclient, $adresseclient, $cpclient, $villeclient, $telephoneclient, $mailclient) {
 		$this->idclient=$idclient;
